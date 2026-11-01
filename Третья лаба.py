@@ -1,15 +1,15 @@
-A = -5.0          
-B = 5.0                     
+A = -6.0          
+B = 6.0                     
 h = 1.0
 
-print(f"{'Аргумент (x)'} | {'Функция F(x) = x^2'}")
+print(f"{'Аргумент (x)'} | {'Функция F(x) = |x^3|'}")
 
 x = A
 
-while x <= B + h/2: 
+while x <= B : 
     
-    F_x = x ** 2
+    F_x = abs(x ** 3)
     
-    print(f"{x} | {F_x}")
+    print(f"{x}         | {F_x}")
     
     x += h
